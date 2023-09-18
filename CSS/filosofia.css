@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@200;500&display=swap');
+body{
+    background: #333333;
+}
+
+h1{
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 3rem;
+	color: #fdfbfb;
+}
+h2, span{
+	font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    display: flex; /* Utilizamos flexbox para centrar verticalmente */
+    align-items: center; /* Centramos verticalmente los elementos */
+    justify-content: center; /* Centramos horizontalmente los elementos */
+    color: #ffffff;
+}
+p{
+	font-family: 'Lora';
+}
+/*-------------Navbar----------------------*/
+.navbar-brand img{
+    width: 7rem;
+}
+.nav-link{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    color:#ffffff
+}
+/*-------------/Navbar----------------------*/
+/*-------------filo----------------------*/
+.filo{
+    --opacidad-negro: 0.3;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../img/filosofia/fondo1.webp");
+    background-position: center;
+    background-size: cover;
+    height:25rem;
+}
+.text-filo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem; /* Ajusta según tus preferencias */
+    line-height: 1.6; /* Interlineado recomendado */
+    margin-bottom: 1.5rem; /* Espaciado entre párrafos */
+    text-align: justify; /* Agrega esta línea para justificar el texto */
+    color: #ffffff;
+  }
+  
+  .text-filo strong {
+    color: #ff0000; /* Resaltar el nombre de la empresa en rojo */
+  }
+/*-------------/filo----------------------*/
+/*-------------tarjetas----------------------*/
+.tarjetas{
+    color: #ffffff;
+}
+.card1{
+    .bi{
+        font-size: 4rem;
+    }
+    
+    .card-title{
+        font-size: 2rem;
+    }
+    .card-text{
+        padding-top: 1rem;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem; /* Ajusta según tus preferencias */
+        text-align: left; /* Agrega esta línea para justificar el texto */
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        margin: 0 1rem; /* Espacio en los costados */
+    }
+}
+.card1:hover{
+    .bi, .card-title{
+        color: #ff0000;
+    }
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 11px 9px 15px #000000;
+    position: relative;
+	overflow: hidden;
+	display: flex;
+}
+/*-------------/tarjetas----------------------*/
+/*-------------Valores----------------------*/
+.card{
+    height: 25rem;
+    .bi{
+        font-size: 3rem;
+    }
+    .card-title{
+        font-size: 2rem;
+    }
+    .card-text{
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+}
+.card:hover{
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 11px 9px 15px #000000;
+    border: 2px solid #ff0000; 
+    position: relative;
+	overflow: hidden;
+	display: flex;
+    .bi, .card-title{
+        color: #ff0000;
+    }
+}
+/*-------------/Valores----------------------*/
+
+.footer{
+    color: #ffffff;
+    
+}
